@@ -8,8 +8,10 @@
     <a href="https://github.com/ylJeferson/automate">Download</a>
     ·
     <a href="https://github.com/ylJeferson/automate/issues/new/choose">Reportar Bug</a>
+    ·
+    <a href="https://github.com/ylJeferson/automate/issues/new/choose">Sugerir Ideias</a>
   </p>
-<!-- <p align="center">Love the project? Please consider <a href="https://www.paypal.me/yljeferson">donating</a> to help it improve! -->
+<!-- <p align="center">Gostou do projeto? Por favor, considere realizar uma <a href="https://www.paypal.me/yljeferson">doação</a> para me ajudar! -->
 
 # Menu
 
