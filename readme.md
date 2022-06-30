@@ -42,55 +42,53 @@ _Nota: Após o fim do estágio eu continuei incrementando o arquivo e hoje em di
 
 _Nota: Assim que realizar o download do batch, utilizar a opção 3 para que o proprio script realize o download dos prorgamas e arquivos de configuração._
 
-<!--
- if %errorlevel% equ 1 set PERFIL=10 12 13 14 19 20 21 22 23 24 25 26 27 31 33 34 90 91 98<br>
- if %errorlevel% equ 2 set PERFIL=09 & rem do it yourself<br>
- if %errorlevel% equ 3 set PERFIL=bu & rem bat update<br>
- if %errorlevel% equ 4 cls && goto copyright<br>
- if %errorlevel% equ 5 cls && goto copyright<br>
- if %errorlevel% equ 6 cls && goto copyright<br>
- if %errorlevel% equ 7 cls && goto copyright<br>
- if %errorlevel% equ 8 cls && goto copyright<br>
- if %errorlevel% equ 9 cls && goto copyright<br>
- if %errorlevel% equ 10 set PERFIL=13 14 90 91 98<br>
--->
-  
 ### Opções:
 
- - `00 - Padronização` - Aplica configurações e executa alguns registros afim de padronizar o sistema.
- - `01 - Clientes` - Realiza a instalação de alguns programas previamente configurados diretamente no arquivos.
- - `02 - Do It Yourself` - Abre um menu com as opções de programas que você pode instalar.
+ - `00 - Padronização:` Aplica configurações e executa alguns registros afim de padronizar o sistema.
+ - `01 - Clientes:` Realiza a instalação de alguns programas previamente configurados diretamente no arquivos.
+ - `02 - Do It Yourself:` Abre um menu com as opções de programas que você pode instalar.
       - _Basta digitar o número dos programas correspondentes e separar por espaço. (Exemplo: 11 24 30 ...)_
- - `03 - Update` - Faz a atualização dos programas e arquivos de configuração.
+ - `03 - Update:` Faz a atualização dos programas e arquivos de configuração.
       - _Caso não for possível realizar algum download, ao final é aberto um bloco de notas listando todos os downloads que não foram realizados._
 
 ### Configurações:
 
- - `10 - Elevar Permissões` - Executa o arquivo batch como administrador.
- - `11 - Administrador` - Ativa o Administrador local da máquina.
+ - `10 - Elevar Permissões:` Executa o arquivo batch como administrador.
+ - `11 - Administrador:` Ativa o Administrador local da máquina.
       - _Você deve digitar uma senha para o usuário, ou simplesmente apertar o enter para confirmar a senha em branco_
- - `12 - Ponto de Restauração` - Cria um ponto de restauração no windows.
+ - `12 - Ponto de Restauração:` Cria um ponto de restauração no windows.
       - _Este comando só funciona uma vez por dia_
- - `13 - Estrutura de Pastas` - Cria uma estrutura de pastas no Disco Local C e da permissão para todos os usuários.
- - `14 - Copiar os Arquivos` - Copia alguns arquivos para a Área de Trabalho e para a pasta Config.
- - `15 - Firewall` - Desativa o Firewall do Windows.
- - `16 - Adaptador de Rede` - Renomeia o adaptador de rede principal para Ethernet.
- - `17 - Windows Update` - Desativa as atualizações pelo Windows Update.
+ - `13 - Estrutura de Pastas:` Cria uma estrutura de pastas no Disco Local C e da permissão para todos os usuários.
+ - `14 - Copiar os Arquivos:` Copia alguns arquivos para a Área de Trabalho e para a pasta Config.
+ - `15 - Firewall:` Desativa o Firewall do Windows.
+ - `16 - Adaptador de Rede:` Renomeia o adaptador de rede principal para Ethernet.
+ - `17 - Windows Update:` Desativa as atualizações pelo Windows Update.
       - _Você ainda pode atualizar manualmente clicando no botão "Verificar se há atualizações"_
- - `90 - Padronização` - Cofigura fechamento de tampa e suspensão para não fazer nada.
- - `91 - Registros` - Executa alguns arquivos de registro e da permissão para alteração neles.
- - `98 - Arquivo Log` - Abre o arquivo de log listando nomes de programas que deram algum erro durante a instalação.
- - `99 - Reiniciar` - Reinicia o computador afim de aplicar atualizações ou configurações de programas recém instalados.
+ - `19 - Antivirus:` Cofigura a pasta "C:\config\" nas exclusões do Windows Defender.
+ - `30 - PowerShell:` Habilita o PowerShell para enviar comando remotamente.
+ - `90 - Padronização:` Cofigura fechamento de tampa e suspensão para não fazer nada.
+ - `91 - Registros:` Executa alguns arquivos de registro e da permissão para alteração neles.
+ - `98 - Arquivo Log:` Abre o arquivo de log listando nomes de programas que deram algum erro durante a instalação.
+ - `99 - Reiniciar:` Reinicia o computador afim de aplicar atualizações ou configurações de programas recém instalados.
 
 ### Programas:
-<!--
- - `bgcolor` - bgcolor=_transparent_
- - `name` - name=_Example_
- - `namecolor` - namecolor=_rgb%28255,99,71%29_
- - `namefont` - namefont=_Tangerine_
- - `namefontsize` - namefontsize=_10rem_
- - `anim` - anim=_that's;what;this;is_
- - `animcolor` - animcolor=_%236941d3_
- - `animfont` - animfont=_Flow%20Rounded_
- - `animfontsize` - animfontsize=_5em_
--->
+
+ - `18 - 7-Zip:` /S
+ - `20 - Any Desk:` --install "C:\Program Files\AnyDesk" --start-with-win --create-shortcuts --create-desktop-icon --silent
+ - `21 - Avast:` /silent 
+ - `22 - Folder Size:` /qb
+ - `23 - Google Chrome:` _Não há parâmetros_
+ - `24 - Java:` /s
+ - `25 - K-Lite:` /silent
+ - `26 - Libre Office:` /qb REGISTER_ALL_MSO_TYPES=0 UI_LANGS=pt_BR ISCHECKFORPRODUCTUPDATES=0 REBOOTYESNO=No QUICKSTART=0 ADDLOCAL=ALL VC_REDIST=0
+ - `27 - Light Shot:` /sp /silent /supressmsgboxes
+ - `28 - Microsoft Office:` _Não há parâmetros_
+ - `29 - Office 16.013801.20266:` /update user updatetoversion=16.0.13801.20266
+ - `31 - TeamViewer:` /S
+ - `32 - UltraVNC:` /verysilent /supressmsgboxes /nocancel /norestart /loadinf=".\configuracoes\programas\uvnc\ultravnc.inf"
+ - `33 - VCRedist:` /install /quiet /norestart
+ - `34 - Winrar:` /S
+
+_Nota:  Acima temos os programas que podem ser isntalados e seus parâmetros para uma instalação silenciosa._
+<br>
+
