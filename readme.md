@@ -13,16 +13,16 @@
 
 # Menu
 
-- [Automate](#automate)
+- [História](#história)
 - [Customização](#customização)
   - [Opções](#opções)
   - [Configurações](#configurações)
   - [Programas](#programas)
 <br>
 
-## Automate
+## História
 
-A história deste batch file começa com os meus 18-19 anos de idade.
+Começa com os meus 18 a 19 anos de idade.
 Comecei a estagiar na prefeitura da minha cidade, e lá eles tinham alguns arquivos que automatizavam a instalação de alguns programas.
 Porém estavam separados por sistema operacional e arquitetura do sistema.
 Eu juntamente com o o outro estágiario "melquichiclete" fiz a mesclagem desses arquivos.
