@@ -90,10 +90,8 @@ echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
 echo єЫЫЯЯЯЯЯЯЫЫЫЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЫЫє
 echo єЫЫ  00  ЫЫЫ          Padroniza‡Жo          ЫЫє
 echo єЫЫ  01  ЫЫЫ            Clientes            ЫЫє
-echo єЫЫ  03  ЫЫЫ        Kazzo Confec‡дes        ЫЫє
-echo єЫЫ  06  ЫЫЫ         MySQL Commands         ЫЫє
-echo єЫЫ  08  ЫЫЫ             Update             ЫЫє
-echo єЫЫ  09  ЫЫЫ      DIY - Do It Yourself      ЫЫє
+echo єЫЫ  02  ЫЫЫ      DIY - Do It Yourself      ЫЫє
+echo єЫЫ  03  ЫЫЫ             Update             ЫЫє
 echo єЫЫЬЬЬЬЬЬЫЫЫЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЫЫє
 echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
 echo ИНННННННННННННННННННННННННННННННННННННННННННННј
@@ -104,16 +102,16 @@ goto automate
 
 :escolha
 if not defined P1 choice /N /C 1234567890 /M "ЙН Digite a op‡Жo desejada: "
-if %errorlevel% equ 1 set PERFIL=10 12 13 14 18 19 20 21 22 23 24 25 28 90 91 95
-if %errorlevel% equ 2 cls && goto copyright
-if %errorlevel% equ 3 set PERFIL=10 11 12 13 14 15 16 38 18 31 19 20 21 22 23 24 39 25 26 27 28 37 90 91 93 95 99
+if %errorlevel% equ 1 set PERFIL=10 12 13 14 19 20 21 22 23 24 25 26 27 31 33 34 90 91 98
+if %errorlevel% equ 2 set PERFIL=09 & rem do it yourself
+if %errorlevel% equ 3 set PERFIL=bu & rem bat update
 if %errorlevel% equ 4 cls && goto copyright
 if %errorlevel% equ 5 cls && goto copyright
-if %errorlevel% equ 6 set PERFIL=db & rem database commands
+if %errorlevel% equ 6 cls && goto copyright
 if %errorlevel% equ 7 cls && goto copyright
-if %errorlevel% equ 8 set PERFIL=bu & rem bat update
-if %errorlevel% equ 9 set PERFIL=09 & rem do it yourself
-if %errorlevel% equ 10 set PERFIL=13 14 90 91 95
+if %errorlevel% equ 8 cls && goto copyright
+if %errorlevel% equ 9 cls && goto copyright
+if %errorlevel% equ 10 set PERFIL=13 14 90 91 98
 
 if not defined P1 choice /N /C SN /M "ИН Deseja prosseguir? [S,N]: "
 if %errorlevel% equ 1 goto automate
@@ -143,29 +141,24 @@ echo єЫЫ  13  ЫЫЫ  Criar a Estrutura das Pastas  ЫЫє
 echo єЫЫ  14  ЫЫЫ       Copiar os Arquivos       ЫЫє
 echo єЫЫ  15  ЫЫЫ       Desativar Firewall       ЫЫє
 echo єЫЫ  16  ЫЫЫ   Renomear Adaptador de Rede   ЫЫє
-echo єЫЫ  38  ЫЫЫ    Desativar Windows Update    ЫЫє
-echo єЫЫ  17  ЫЫЫ              7-Zip             ЫЫє
-echo єЫЫ  30  ЫЫЫ        Adobe Acrobat DC        ЫЫє
-echo єЫЫ  18  ЫЫЫ           Antivirus            ЫЫє
-echo єЫЫ  31  ЫЫЫ            Any Desk            ЫЫє
-echo єЫЫ  33  ЫЫЫ            Cute PDF            ЫЫє
-echo єЫЫ  19  ЫЫЫ           FolderSize           ЫЫє
-echo єЫЫ  20  ЫЫЫ          GoogleChrome          ЫЫє
-echo єЫЫ  21  ЫЫЫ              Java              ЫЫє
-echo єЫЫ  22  ЫЫЫ             K-Lite             ЫЫє
-echo єЫЫ  29  ЫЫЫ          Libre Office          ЫЫє
-echo єЫЫ  23  ЫЫЫ           Light Shot           ЫЫє
-echo єЫЫ  24  ЫЫЫ             Office             ЫЫє
-echo єЫЫ  39  ЫЫЫ     Office 16.013801.20266     ЫЫє
-echo єЫЫ  37  ЫЫЫ           PowerShell           ЫЫє
-echo єЫЫ  32  ЫЫЫ           SQL Native           ЫЫє
-echo єЫЫ  25  ЫЫЫ           TeamViewer           ЫЫє
-echo єЫЫ  26  ЫЫЫ            UltraVNC            ЫЫє
-echo єЫЫ  27  ЫЫЫ           VirtualAge           ЫЫє
-echo єЫЫ  36  ЫЫЫ           VirtualPDV           ЫЫє
-echo єЫЫ  34  ЫЫЫ            VCRedist            ЫЫє
-echo єЫЫ  28  ЫЫЫ             Winrar             ЫЫє
-echo єЫЫ  35  ЫЫЫ            Workbench           ЫЫє
+echo єЫЫ  17  ЫЫЫ    Desativar Windows Update    ЫЫє
+echo єЫЫ  18  ЫЫЫ              7-Zip             ЫЫє
+echo єЫЫ  19  ЫЫЫ           Antivirus            ЫЫє
+echo єЫЫ  20  ЫЫЫ            Any Desk            ЫЫє
+echo єЫЫ  21  ЫЫЫ        Avast Antivirus         ЫЫє
+echo єЫЫ  22  ЫЫЫ           FolderSize           ЫЫє
+echo єЫЫ  23  ЫЫЫ          GoogleChrome          ЫЫє
+echo єЫЫ  24  ЫЫЫ              Java              ЫЫє
+echo єЫЫ  25  ЫЫЫ             K-Lite             ЫЫє
+echo єЫЫ  26  ЫЫЫ          Libre Office          ЫЫє
+echo єЫЫ  27  ЫЫЫ           Light Shot           ЫЫє
+echo єЫЫ  28  ЫЫЫ             Office             ЫЫє
+echo єЫЫ  29  ЫЫЫ     Office 16.013801.20266     ЫЫє
+echo єЫЫ  30  ЫЫЫ           PowerShell           ЫЫє
+echo єЫЫ  31  ЫЫЫ           TeamViewer           ЫЫє
+echo єЫЫ  32  ЫЫЫ            UltraVNC            ЫЫє
+echo єЫЫ  33  ЫЫЫ            VCRedist            ЫЫє
+echo єЫЫ  34  ЫЫЫ             Winrar             ЫЫє
 echo єЫЫЬЬЬЬЬЬЫЫЫЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЫЫє
 echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
 echo ИНННННННННННННННННННННННННННННННННННННННННННННј
@@ -183,7 +176,7 @@ echo єЫЫЫЫЫЫЫ EXECUTANDO COMO ADMINISTRADOR ЫЫЫЫЫЫЫє
 echo єЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫє
 echo ИНННННННННННННННННННННННННННННННННННННННННННННј
 set "path_bat=%~f0"
-set "elevar_cmd=%~d0%~p0\configuracoes\programas\vbscript\elevar_cmd.vbs"
+set "elevar_cmd=%~d0%~p0\configuracoes\programas\vbscript\elevate_cmd.vbs"
 
 if %ELEVATE% equ Usuario (
 	setlocal EnableDelayedExpansion
@@ -237,8 +230,7 @@ mkdir "c:\config\temp"
 mkdir "c:\config\drivers"
 mkdir "c:\config\imagens"
 mkdir "c:\config\programas"
-mkdir "c:\config\programas\1. Ativadores"
-mkdir "c:\config\programas\2. Portables"
+mkdir "c:\config\programas\1. Portables"
 cacls "c:\config" /e /p Todos:f > nul
 
 goto automate
@@ -250,8 +242,7 @@ echo єЫЫЫЫЫЫЫЫЫЫЫЫЫ COPIANDO ARQUIVOS ЫЫЫЫЫЫЫЫЫЫЫЫЫє
 echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫЫє
 echo ИНННННННННННННННННННННННННННННННННННННННННННННј
 copy ".\configuracoes\atalhos\*.*" "C:%HOMEPATH%\..\Public\Desktop" > nul
-copy ".\programas\1. Ativadores\Ativadores.iso" "C:\config\programas\1. Ativadores" /Y > nul
-xcopy ".\programas\2. Portables" "C:\config\programas\2. Portables" /E /I /C /H /R /Y > nul
+xcopy ".\programas\1. Portables" "C:\config\programas\1. Portables" /E /I /C /H /R /Y > nul
 
 goto automate
 
@@ -289,6 +280,17 @@ goto automate
 
 :17
 echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
+echo єЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫє
+echo єЫЫЫЫЫ DESATIVAR ATUALIZACOES DO WINDOWS ЫЫЫЫЫє
+echo єЫЫЫЫЫЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЫЫЫЫЫє
+echo ИНННННННННННННННННННННННННННННННННННННННННННННј
+reg add HKCU\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate /v AUOptions /t REG_DWORD /d 2
+reg add HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU /v NoAutoUpdate /t REG_DWORD /d 1
+
+goto automate
+
+:18
+echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
 echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
 echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ 7 ZIP ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
 echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
@@ -301,7 +303,7 @@ reg import ".\configuracoes\registros\7z_%OS%.reg"
 
 goto automate
 
-:18
+:19
 echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
 echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
 echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ ANTIVIRUS ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
@@ -316,7 +318,18 @@ if %errorlevel% equ 1 echo ANTIVIRUS >> "c:\config\log.txt"
 
 goto automate
 
-:19
+:20
+echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
+echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
+echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ ANYDESK ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
+echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
+echo ИНННННННННННННННННННННННННННННННННННННННННННННј
+".\programas\AnyDesk\AnyDesk.exe" --install "C:\Program Files\AnyDesk" --start-with-win --create-shortcuts --create-desktop-icon --silent
+if %errorlevel% equ 1 echo ANYDESK >> "c:\config\log.txt"
+
+goto automate
+
+:22
 echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
 echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
 echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ FOLDER SIZE ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
@@ -327,7 +340,7 @@ if %errorlevel% equ 1 echo FOLDER SIZE >> "c:\config\log.txt"
 
 goto automate
 
-:20
+:23
 echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
 echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
 echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ GOOGLE CHROME ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
@@ -338,7 +351,7 @@ if %errorlevel% equ 1 echo GOOGLE CHROME >> "c:\config\log.txt"
 
 goto automate
 
-:21
+:24
 echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
 echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
 echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ JAVA ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
@@ -349,7 +362,7 @@ if %errorlevel% equ 1 echo JAVA >> "c:\config\log.txt"
 
 goto automate
 
-:22
+:25
 echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
 echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
 echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ KLITE ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
@@ -360,7 +373,20 @@ if %errorlevel% equ 1 echo K-LITE >> "c:\config\log.txt"
 
 goto automate
 
-:23
+:26
+echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
+echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
+echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ LIBRE OFFICE ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
+echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
+echo ИНННННННННННННННННННННННННННННННННННННННННННННј
+if %OS%==32BIT ".\programas\Libre Office\%OS%\libreoffice.msi" /qb REGISTER_ALL_MSO_TYPES=0 UI_LANGS=pt_BR ISCHECKFORPRODUCTUPDATES=0 REBOOTYESNO=No QUICKSTART=0 ADDLOCAL=ALL VC_REDIST=0
+if %OS%==64BIT ".\programas\Libre Office\%OS%\libreoffice.msi" /qb REGISTER_ALL_MSO_TYPES=0 UI_LANGS=pt_BR ISCHECKFORPRODUCTUPDATES=0 REBOOTYESNO=No QUICKSTART=0 ADDLOCAL=ALL VC_REDIST=0
+if %errorlevel% equ 1 echo LIBRE OFFICE >> "c:\config\padrao\log.txt"
+xcopy ".\configuracoes\programas\libreoffice" "%userprofile%\Dados de aplicativos\LibreOffice\4\user" /E /I /C /H /R /K /Y
+
+goto automate
+
+:27
 echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
 echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
 echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ LIGHTSHOT ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
@@ -371,7 +397,7 @@ if %errorlevel% equ 1 echo LIGHTSHOT >> "c:\config\log.txt"
 
 goto automate
 
-:24
+:28
 echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
 echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
 echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ OFFICE ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
@@ -389,201 +415,7 @@ if not defined TASK goto automate
 set TASK=
 goto office
 
-:25
-echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ TEAM VIEWER ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo ИНННННННННННННННННННННННННННННННННННННННННННННј
-".\programas\Team Viewer\%OS%\teamviewer.exe" /S
-if %errorlevel% equ 1 echo TEAM VIEWER >> "c:\config\log.txt"
-
-goto automate
-
-:26
-echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ ULTRA VNC ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo ИНННННННННННННННННННННННННННННННННННННННННННННј
-".\programas\Ultra VNC\%OS%\uvnc.exe" /verysilent /supressmsgboxes /nocancel /norestart /loadinf=".\configuracoes\programas\uvnc\ultravnc.inf"
-if %errorlevel% equ 1 echo ULTRA VNC >> "c:\config\log.txt"
-
-if exist "%programfiles%\uvnc bvba\UltraVNC\" copy ".\configuracoes\programas\uvnc\ultravnc.ini" "%programfiles%\uvnc bvba\UltraVNC\" /y
-net stop uvnc_service
-timeout 5
-net start uvnc_service
-
-goto automate
-
-:27
-echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ VIRTUAL AGE ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo ИНННННННННННННННННННННННННННННННННННННННННННННј
-".\programas\Virtual Age\virtualage.exe" /s /v/qn
-if %errorlevel% equ 1 echo VIRTUAL AGE >> "c:\config\log.txt"
-cscript ".\configuracoes\programas\virtual_age\atalho.vbs"
-
-goto automate
-
-:28
-echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ WINRAR ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo ИНННННННННННННННННННННННННННННННННННННННННННННј
-".\programas\WinRAR\%OS%\winrar.exe" /S
-if %errorlevel% equ 1 echo WINRAR >> "c:\config\log.txt"
-copy ".\configuracoes\programas\winrar\rarreg.key" "%programfiles%\WinRAR\" > nul
-
-goto automate
-
 :29
-echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ LIBRE OFFICE ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo ИНННННННННННННННННННННННННННННННННННННННННННННј
-if %OS%==32BIT ".\programas\Libre Office\%OS%\libreoffice.msi" /qb REGISTER_ALL_MSO_TYPES=0 UI_LANGS=pt_BR ISCHECKFORPRODUCTUPDATES=0 REBOOTYESNO=No QUICKSTART=0 ADDLOCAL=ALL VC_REDIST=0
-if %OS%==64BIT ".\programas\Libre Office\%OS%\libreoffice.msi" /qb REGISTER_ALL_MSO_TYPES=0 UI_LANGS=pt_BR ISCHECKFORPRODUCTUPDATES=0 REBOOTYESNO=No QUICKSTART=0 ADDLOCAL=ALL VC_REDIST=0
-if %errorlevel% equ 1 echo LIBRE OFFICE >> "c:\config\padrao\log.txt"
-xcopy ".\configuracoes\programas\libreoffice" "%userprofile%\Dados de aplicativos\LibreOffice\4\user" /E /I /C /H /R /K /Y
-
-goto automate
-
-:30
-echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ ADOBE ACROBAT ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo ИНННННННННННННННННННННННННННННННННННННННННННННј
-"%programfiles%\WinRAR\winrar.exe" x -Y ".\programas\Adobe\Adobe Acrobat Pro DC.iso" "c:\config\programas\Acrobat\"
-"c:\config\programas\Acrobat\setup.exe" /sPB /rs
-if %errorlevel% equ 1 echo ADOBE ACROBAT >> "c:\config\log.txt"
-
-if %OS%==32BIT copy ".\configuracoes\programas\acrobat\amtlib.dll" "%programfiles%\Adobe\Acrobat DC\Acrobat" /y
-if %OS%==64BIT  copy ".\configuracoes\programas\acrobat\amtlib.dll" "%programfiles(x86)%\Adobe\Acrobat DC\Acrobat" /y
-
-if %SYSTEM%==10 if %OS%==32BIT powershell -Command Add-MpPreference -ExclusionPath "$ENV:programfiles\Adobe\'Acrobat DC'\Acrobat\amtlib.dll"
-if %SYSTEM%==10 if %OS%==64BIT powershell -Command Add-MpPreference -ExclusionPath "$ENV:programfiles(x86)\Adobe\'Acrobat DC'\Acrobat\amtlib.dll"
-
-ECHO. >> %WINDIR%\system32\drivers\etc\hosts
-FIND /C /I "lmlicenses.wip4.adobe.com" %WINDIR%\system32\drivers\etc\hosts
-IF %errorlevel% NEQ 0 ECHO %NEWLINE%^	0.0.0.0			lmlicenses.wip4.adobe.com>>%WINDIR%\system32\drivers\etc\hosts
-FIND /C /I "lm.licenses.adobe.com" %WINDIR%\system32\drivers\etc\hosts
-IF %errorlevel% NEQ 0 ECHO ^	0.0.0.0			lm.licenses.adobe.com>>%WINDIR%\system32\drivers\etc\hosts
-FIND /C /I "na1r.services.adobe.com" %WINDIR%\system32\drivers\etc\hosts
-IF %errorlevel% NEQ 0 ECHO ^	0.0.0.0			na1r.services.adobe.com>>%WINDIR%\system32\drivers\etc\hosts
-FIND /C /I "hlrcv.stage.adobe.com" %WINDIR%\system32\drivers\etc\hosts
-IF %errorlevel% NEQ 0 ECHO ^	0.0.0.0			hlrcv.stage.adobe.com>>%WINDIR%\system32\drivers\etc\hosts
-FIND /C /I "practivate.adobe.com" %WINDIR%\system32\drivers\etc\hosts
-IF %errorlevel% NEQ 0 ECHO ^	0.0.0.0			practivate.adobe.com>>%WINDIR%\system32\drivers\etc\hosts
-FIND /C /I "activate.adobe.com" %WINDIR%\system32\drivers\etc\hosts
-IF %errorlevel% NEQ 0 ECHO ^	0.0.0.0			activate.adobe.com>>%WINDIR%\system32\drivers\etc\hosts
-FIND /C /I "genuine.adobe.com" %WINDIR%\system32\drivers\etc\hosts
-IF %errorlevel% NEQ 0 ECHO ^	0.0.0.0			genuine.adobe.com>>%WINDIR%\system32\drivers\etc\hosts
-FIND /C /I "prod.adobegenuine.com" %WINDIR%\system32\drivers\etc\hosts
-IF %errorlevel% NEQ 0 ECHO ^	0.0.0.0			prod.adobegenuine.com>>%WINDIR%\system32\drivers\etc\hosts
-
-goto automate
-
-:31
-echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ ANYDESK ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo ИНННННННННННННННННННННННННННННННННННННННННННННј
-".\programas\AnyDesk\AnyDesk.exe" --install "C:\Program Files\AnyDesk" --start-with-win --create-shortcuts --create-desktop-icon --silent
-if %errorlevel% equ 1 echo ANYDESK >> "c:\config\log.txt"
-
-goto automate
-
-:32
-echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫ SQL NATIVE CLIENT ЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo ИНННННННННННННННННННННННННННННННННННННННННННННј
-".\programas\SQL\%OS%\sqlncli.msi" /qb IACCEPTSQLNCLILICENSETERMS=YES
-if %errorlevel% equ 1 echo SQL NATIVE CLIENT >> "c:\config\log.txt"
-
-goto automate
-
-:33
-echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ CUTEPDF ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo ИНННННННННННННННННННННННННННННННННННННННННННННј
-".\programas\Cute\CutePDF.exe" /silent
-if %errorlevel% equ 1 echo CUTE PDF >> "c:\config\log.txt"
-
-goto automate
-
-:34
-echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ VC REDIST ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo ИНННННННННННННННННННННННННННННННННННННННННННННј
-".\programas\Visual C++\%OS%\vcredist.exe" /install /quiet /norestart
-if %errorlevel% equ 1 echo VISUAL C++ >> "c:\config\log.txt"
-
-goto automate
-
-:35
-echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ WORKBENCH ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo ИНННННННННННННННННННННННННННННННННННННННННННННј
-".\programas\MySQL\workbench.msi" /qb
-if %errorlevel% equ 1 echo WORKBENCH >> "c:\config\log.txt"
-
-goto automate
-
-:36
-echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ VIRTUAL PDV ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo ИНННННННННННННННННННННННННННННННННННННННННННННј
-copy ".\programas\Virtual PDV\BemaSAT.dll" "C:\VirtualPDV\VirtualPDVCliente\Resources\DLLs\" /y
-copy ".\programas\Virtual PDV\BemaSAT.dll" "C:\VirtualPDV\VirtualPDVWebService\Resources\DLLs\" /y
-
-copy ".\programas\Virtual PDV\PGWebLib.dll" "C:\VirtualPDV\VirtualPDVCliente\DllPayGo\" /y
-copy ".\programas\Virtual PDV\PGWebLib.dll" "C:\VirtualPDV\VirtualPDVWebService\DllPayGo\" /y
-
-del "C:\VirtualPDV\VirtualPDVCliente\App_Data\Log\*.*" /q
-del "C:\VirtualPDV\VirtualPDVWebService\App_Data\Log\*.*" /q
-if %errorlevel% equ 1 echo VIRTUAL PDV >> "c:\config\log.txt"
-
-goto automate
-
-:37
-echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫ REMOTE POWERSHELL ЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo ИНННННННННННННННННННННННННННННННННННННННННННННј
-powershell -command Enable-PSRemoting -Force
-
-goto automate
-
-:38
-echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
-echo єЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫє
-echo єЫЫЫЫЫ DESATIVAR ATUALIZACOES DO WINDOWS ЫЫЫЫЫє
-echo єЫЫЫЫЫЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЫЫЫЫЫє
-echo ИНННННННННННННННННННННННННННННННННННННННННННННј
-reg add HKCU\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate /v AUOptions /t REG_DWORD /d 2
-reg add HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU /v NoAutoUpdate /t REG_DWORD /d 1
-
-goto automate
-
-:39
 echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
 echo єЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫє
 echo єЫЫЫЫЫЫЫЫЫЫ OFFICE 16.0.13801.20266 ЫЫЫЫЫЫЫЫЫЫє
@@ -600,6 +432,66 @@ for /f %%T in ('wmic process get ExecutablePath^| findstr /I /C:"C:\Program File
 if not defined TASK goto automate
 set TASK=
 goto office_update
+
+:30
+echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
+echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫє
+echo єЫЫЫЫЫЫЫЫЫЫЫЫЫ REMOTE POWERSHELL ЫЫЫЫЫЫЫЫЫЫЫЫЫє
+echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫЫє
+echo ИНННННННННННННННННННННННННННННННННННННННННННННј
+powershell -command Enable-PSRemoting -Force
+
+goto automate
+
+:31
+echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
+echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
+echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ TEAM VIEWER ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
+echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
+echo ИНННННННННННННННННННННННННННННННННННННННННННННј
+".\programas\Team Viewer\%OS%\teamviewer.exe" /S
+if %errorlevel% equ 1 echo TEAM VIEWER >> "c:\config\log.txt"
+
+goto automate
+
+:32
+echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
+echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
+echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ ULTRA VNC ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
+echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
+echo ИНННННННННННННННННННННННННННННННННННННННННННННј
+".\programas\Ultra VNC\%OS%\uvnc.exe" /verysilent /supressmsgboxes /nocancel /norestart /loadinf=".\configuracoes\programas\uvnc\ultravnc.inf"
+if %errorlevel% equ 1 echo ULTRA VNC >> "c:\config\log.txt"
+
+if exist "%programfiles%\uvnc bvba\UltraVNC\" copy ".\configuracoes\programas\uvnc\ultravnc.ini" "%programfiles%\uvnc bvba\UltraVNC\" /y
+net stop uvnc_service
+timeout 5
+net start uvnc_service
+
+goto automate
+
+:33
+echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
+echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
+echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ VC REDIST ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
+echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
+echo ИНННННННННННННННННННННННННННННННННННННННННННННј
+".\programas\Visual C++\%OS%\vcredist.exe" /install /quiet /norestart
+if %errorlevel% equ 1 echo VISUAL C++ >> "c:\config\log.txt"
+
+goto automate
+
+:34
+echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
+echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
+echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ WINRAR ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
+echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
+echo ИНННННННННННННННННННННННННННННННННННННННННННННј
+".\programas\WinRAR\%OS%\winrar.exe" /S
+if %errorlevel% equ 1 echo WINRAR >> "c:\config\log.txt"
+copy ".\configuracoes\programas\winrar\rarreg.key" "%programfiles%\WinRAR\" > nul
+
+goto automate
 
 												rem =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= mer
 												rem =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= mer
@@ -655,42 +547,12 @@ goto automate
 
 												rem =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= mer
 												rem =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= mer
-												rem =-=-=-=-=-=-=-= PADRONIZAЗГO DO =-=-=-=-=-=-=-= mer
-												rem =-=-=-=-=-=-=-=-=-= CLIENTE =-=-=-=-=-=-=-=-=-= mer
-												rem =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= mer
-												rem =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= mer
-:92
-:padraoclient
-
-goto automate
-
-												rem =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= mer
-												rem =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= mer
-												rem =-=-=-=-=-=-=-= PADRONIZAЗГO DA =-=-=-=-=-=-=-= mer
-												rem =-=-=-=-=-=-=-=-=-=- KAZZO -=-=-=-=-=-=-=-=-=-= mer
-												rem =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= mer
-												rem =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= mer
-:93
-:padraokazzo
-reg import ".\configuracoes\registros\oemkazzo.reg"
-
-echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫ ADICIONANDO CAMINHO ЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫє
-echo ИНННННННННННННННННННННННННННННННННННННННННННННј
-SETX PATH "%PATH%;C:\Program Files\uvnc bvba\UltraVNC"
-
-goto automate
-
-												rem =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= mer
-												rem =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= mer
 												rem =-=-=-=-=-=-=-=- БREA DEDICADA -=-=-=-=-=-=-=-= mer
 												rem =-=-=-=-=-=-=-=- PARA EXCLUSГO -=-=-=-=-=-=-=-= mer
 												rem =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= mer
 												rem =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= mer
 
-:95
+:98
 echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
 echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
 echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ EXCLUINDO ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
@@ -713,122 +575,6 @@ shutdown -r -t 00
 
 goto automate
 
-:db
-echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ CMD MYSQL ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo ИНННННННННННННННННННННННННННННННННННННННННННННј
-
-:resetmysqlvariables
-set MYSQLOPTION=
-set DBNAME=
-set DBUSER=
-set DBPASS=
-
-echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЯЯЯЯЯЯЫЫЫЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЫЫє
-echo єЫЫ  01  ЫЫЫ         Backup Database        ЫЫє
-echo єЫЫ  02  ЫЫЫ        Restore Database        ЫЫє
-echo єЫЫ  03  ЫЫЫ          Send Command          ЫЫє
-echo єЫЫ  08  ЫЫЫ             Voltar             ЫЫє
-echo єЫЫ  09  ЫЫЫ              Sair              ЫЫє
-echo єЫЫЬЬЬЬЬЬЫЫЫЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo ИНННННННННННННННННННННННННННННННННННННННННННННј
-choice /N /C 123456789 /M "ЙН Digite a op‡Жo desejada: "
-if %errorlevel% equ 1 set MYSQLOPTION=mysqlbackup
-if %errorlevel% equ 2 set MYSQLOPTION=mysqlrestore
-if %errorlevel% equ 3 set MYSQLOPTION=mysqlcommand
-if %errorlevel% equ 4 cls && goto db
-if %errorlevel% equ 5 cls && goto db
-if %errorlevel% equ 6 cls && goto db
-if %errorlevel% equ 7 cls && goto db
-if %errorlevel% equ 8 set MYSQLOPTION=copyright
-if %errorlevel% equ 9 set MYSQLOPTION=fim
-
-choice /N /C SN /M "ИН Deseja prosseguir? [S,N]: "
-if %errorlevel% equ 1 goto %MYSQLOPTION%
-if %errorlevel% equ 2 set MYSQLOPTION= && goto db
-
-:mysqlbackup
-:mysqlrestore
-:mysqlcommand
-echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ CONEXAO ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo ИНННННННННННННННННННННННННННННННННННННННННННННј
-if exist "%programfiles%\MySQL\MySQL Server 5.7\bin" (
-	set MYSQLSERVER=x64
-)
-
-if exist "%programfiles(x86)%\MySQL\MySQL Server 5.7\bin" (
-	set MYSQLSERVER=x86
-)
-
-set /p DBNAME=ЙН Digite o nome do banco de dados: 
-set /p DBUSER=МН Digite o usu rio: 
-set /p DBPASS=ИН Digite a senha: 
-
-if not defined DBNAME cls && goto db
-if not defined DBUSER cls && goto db
-if not defined DBPASS cls && goto db
-
-if %MYSQLOPTION% == mysqlbackup goto domysqlbackup
-if %MYSQLOPTION% == mysqlrestore goto domysqlrestore
-if %MYSQLOPTION% == mysqlcommand goto domysqlcommand
-cls && goto db
-
-:domysqlbackup
-echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫ REALIZANDO BACKUP ЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫЫє
-echo ИНННННННННННННННННННННННННННННННННННННННННННННј
-if %MYSQLSERVER% == x64 "%programfiles%\MySQL\MySQL Server 5.7\bin\mysqldump.exe" -u%dbuser% -p%dbpass% %dbname% > ".\backups\%dbname%.sql"
-if %MYSQLSERVER% == x86 "%programfiles(x86)%\MySQL\MySQL Server 5.7\bin\mysqldump.exe" -u%dbuser% -p%dbpass% %dbname% > ".\backups\%dbname%.sql"
-
-rem UPDATE
-rem net stop MySQL57
-rem xcopy "%programdata%\MySQL\MySQL Server 5.7\Data\%dbname%\" ".\backups\database\%dbname%\" /E /Y /D
-rem copy "%programdata%\MySQL\MySQL Server 5.7\Data\ibdata1" ".\backups\database\" /y
-rem copy "%programdata%\MySQL\MySQL Server 5.7\Data\ib_logfile0" ".\backups\database\" /y
-rem copy "%programdata%\MySQL\MySQL Server 5.7\Data\ib_logfile1" ".\backups\database\" /y
-rem net start MySQL57
-
-goto db
-
-:domysqlrestore
-echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
-echo єЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫ RESTAURACAO DO BACKUP ЫЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫє
-echo ИНННННННННННННННННННННННННННННННННННННННННННННј
-if %MYSQLSERVER% == x64 "%programfiles%\MySQL\MySQL Server 5.7\bin\mysql.exe" -u%dbuser% -p%dbpass% -e "create database if not exists %dbname%"
-if %MYSQLSERVER% == x86 "%programfiles(x86)%\MySQL\MySQL Server 5.7\bin\mysql.exe" -u%dbuser% -p%dbpass% -e "create database if not exists %dbname%"
-
-if %MYSQLSERVER% == x64 "%programfiles%\MySQL\MySQL Server 5.7\bin\mysql.exe" -u%dbuser% -p%dbpass% %dbname% < ".\backups\%dbname%.sql"
-if %MYSQLSERVER% == x86 "%programfiles(x86)%\MySQL\MySQL Server 5.7\bin\mysql.exe" -u%dbuser% -p%dbpass% %dbname% < ".\backups\%dbname%.sql"
-
-goto db
-
-:domysqlcommand
-echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
-echo єЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫ ENVIAR COMANDO AO BANCO ЫЫЫЫЫЫЫЫЫЫє
-echo єЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫє
-echo ИНННННННННННННННННННННННННННННННННННННННННННННј
-set /p MYSQLCOMMAND=ЇЇЇ Digite o comando: 
-
-if %MYSQLSERVER% == x64 echo %MYSQLCOMMAND% | "%programfiles%\MySQL\MySQL Server 5.7\bin\mysql.exe" -u%dbuser% -p%dbpass% %dbname% -t
-if %MYSQLSERVER% == x86 echo %MYSQLCOMMAND% | "%programfiles(x86)%\MySQL\MySQL Server 5.7\bin\mysql.exe" -u%dbuser% -p%dbpass% %dbname% -t
-
-choice /N /C SN /M "ЇЇЇ Deseja fazer outro comando? [S,N]: "
-if %errorlevel% equ 1 goto domysqlcommand
-if %errorlevel% equ 2 goto db
-
 :bu
 echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
 echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
@@ -836,6 +582,7 @@ echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫ AUTOMATE UPDATE ЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
 echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
 echo ИНННННННННННННННННННННННННННННННННННННННННННННј
 set urlEdgeDriver=https://msedgedriver.azureedge.net/%EdgeVersion%/edgedriver_%WINOS%.zip
+set urlConfiguracoes=https://1drv.ms/u/s!Aq-KETGA-Cp5uko0RWdm4WiqrgPr?e=yK3Rj8
 
 set urlSevenZipx64=https://sourceforge.net/projects/sevenzip/files/latest/download
 set urlAnyDesk=https://anydesk.com/pt/downloads/thank-you?dv=win_exe
@@ -872,8 +619,7 @@ if not exist ".\drivers\" mkdir drivers > nul
 if not exist ".\programas\" mkdir programas > nul
 
 cd .\programas\ > nul
-if not exist ".\1. Ativadores\" mkdir "1. Ativadores" > nul
-if not exist ".\2. Portables\" mkdir "2. Portables" > nul
+if not exist ".\1. Portables\" mkdir "1. Portables" > nul
 if not exist ".\Seven Zip\32BIT\" mkdir "Seven Zip\32BIT" > nul
 if not exist ".\Seven Zip\64BIT\" mkdir "Seven Zip\64BIT" > nul
 if not exist ".\AnyDesk\" mkdir "AnyDesk" > nul
@@ -917,7 +663,7 @@ echo єЫЫЫЫЫЫЫЫЫЫЫЫ BAIXANDO UTILIDADES ЫЫЫЫЫЫЫЫЫЫЫЫє
 echo єЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫє
 echo ИНННННННННННННННННННННННННННННННННННННННННННННј
 if not exist "C:\config\drivers\browser\msedgedriver.exe" start msedge -inprivate "https://msedgedriver.azureedge.net/%EdgeVersion%/edgedriver_%WINOS%.zip" > nul
-if exist "C:\config\drivers\browser\msedgedriver.exe" goto download_autopy_downloader
+if exist "C:\config\drivers\browser\msedgedriver.exe" goto download_configuracoes
 
 :waiting_download_utilities
 if not exist "%userprofile%\Downloads\edgedriver_win64.zip" goto waiting_download_utilities
@@ -926,14 +672,13 @@ if not exist "%userprofile%\Downloads\edgedriver_win64.zip" goto waiting_downloa
 if %errorlevel% equ 1 echo DOWNLOAD EDGE DRIVER - %urlEdgeDriver% >> "c:\config\log.txt"
 rmdir "C:\config\drivers\browser\Driver_Notes" /s /q
 
-:download_autopy_downloader
-if not exist ".\configuracoes\programas\automate\autopy-downloader.exe" start msedge -inprivate "https://1drv.ms/u/s!Aq-KETGA-Cp5tzDNd7J1AKzoyxCi?e=NUnMwi" > nul
-if exist ".\configuracoes\programas\automate\autopy-downloader.exe" goto continue_update
+:download_configuracoes
+start msedge -inprivate "https://1drv.ms/u/s!Aq-KETGA-Cp5uksXfuJK5KJwzcaA?e=eLpcsl" > nul
 
 :waiting_download_utilities2
-if not exist "%userprofile%\Downloads\autopy-downloader.rar" goto waiting_download_utilities2
-"%ProgramFiles%\WinRAR\winrar.exe" x -Y "%userprofile%\Downloads\autopy-downloader.rar" ".\configuracoes\programas\automate\" /y > nul
-if %errorlevel% equ 1 echo DOWNLOAD AUTOPY DOWNLOOADER - %urlAutoPyDownloader% >> "c:\config\log.txt"
+if not exist "%userprofile%\Downloads\configuracoes.rar" goto waiting_download_utilities2
+"%ProgramFiles%\WinRAR\winrar.exe" x -Y "%userprofile%\Downloads\configuracoes.rar" ".\configuracoes\" /y > nul
+if %errorlevel% equ 1 echo DOWNLOAD CONFIGURACOES - %urlConfiguracoes% >> "c:\config\log.txt"
 
 rem echo ЙННННННННННННННННННННННННННННННННННННННННННННН»
 rem echo єЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫє
@@ -1022,7 +767,7 @@ echo єЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫє
 echo єЫЫЫЫЫЫЫЫ BAIXANDO ARQUIVOS - PARTE 3 ЫЫЫЫЫЫЫЫє
 echo єЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫє
 echo ИНННННННННННННННННННННННННННННННННННННННННННННј
-rem start /wait "" ".\configuracoes\programas\automate\autopy-downloader.exe" -s "url" -x "xpath" -i "True or False"
+rem start /wait "" ".\configuracoes\programas\automate\autopy-downloader.exe" -s "url" -x "xpath1,xpath2,xpath3" -i "True or False"
 start "" ".\configuracoes\programas\automate\autopy-downloader.exe" -s "https://www.google.com/chrome/thank-you.html?statcb=1&standalone=1&platform=win&defaultbrowser=1" -x "/html/body/div[3]/section[1]/div/div/div/div/div[4]/p/a" > nul
 start "" ".\configuracoes\programas\automate\autopy-downloader.exe" -s "https://www.google.com/chrome/thank-you.html?statcb=1&standalone=1&platform=win64&defaultbrowser=1" -x "/html/body/div[3]/section[1]/div/div/div/div/div[4]/p/a" > nul
 start "" ".\configuracoes\programas\automate\autopy-downloader.exe" -s "https://codecguide.com/download_k-lite_codec_pack_mega.htm" -x "/html/body/div/div[2]/table/tbody/tr[2]/td[2]/table/tbody/tr[2]/td[2]/a" > nul
@@ -1160,6 +905,9 @@ echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЯЯЯЯЯЯЯЯЯЯЯЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
 echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ EXCLUINDO ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
 echo єЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЬЬЬЬЬЬЬЬЬЬЬЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫє
 echo ИНННННННННННННННННННННННННННННННННННННННННННННј
+if exist "%userprofile%\Downloads\edgedriver_win64.zip" del "%userprofile%\Downloads\edgedriver_win64.zip" /f > nul
+if exist "%userprofile%\Downloads\configuracoes.rar" del "%userprofile%\Downloads\configuracoes.rar" /f > nul
+
 if exist "%userprofile%\Downloads\7z%SevenZipVersion%.exe" del "%userprofile%\Downloads\7z%SevenZipVersion%.exe" /f > nul
 if exist "%userprofile%\Downloads\7z%SevenZipVersion%-x64.exe" del "%userprofile%\Downloads\7z%SevenZipVersion%-x64.exe" /f > nul
 if exist "%userprofile%\Downloads\AnyDesk.exe" del "%userprofile%\Downloads\AnyDesk.exe" /f > nul
