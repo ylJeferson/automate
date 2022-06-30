@@ -1,6 +1,6 @@
 <p align="center">
  <img width="150px" src="automate.ico" align="center" alt="Automate Icon"/>
- <h2 align="center">Automate</h2>
+ <h1 align="center">Automate</h1>
  <p align="center">Arquivo <strong>.bat</strong> para automatizar algumas instalações de programas no sistema operacional windows</p>
 </p>
 
@@ -13,7 +13,7 @@
   </p>
 <!-- <p align="center">Gostou do projeto? Por favor, considere realizar uma <a href="https://www.paypal.me/yljeferson">doação</a> para me ajudar! -->
 
-# Menu
+## Menu
 
 - [História](#história)
 - [Customização](#customização)
