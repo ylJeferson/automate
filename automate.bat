@@ -474,11 +474,6 @@ echo ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
 ".\programas\Ultra VNC\%OS%\uvnc.exe" /verysilent /supressmsgboxes /nocancel /norestart /loadinf=".\configuracoes\programas\uvnc\ultravnc.inf"
 if %errorlevel% equ 1 echo ULTRA VNC >> "c:\config\log.txt"
 
-if exist "%programfiles%\uvnc bvba\UltraVNC\" copy ".\configuracoes\programas\uvnc\ultravnc.ini" "%programfiles%\uvnc bvba\UltraVNC\" /y
-net stop uvnc_service
-timeout 5
-net start uvnc_service
-
 goto automate
 
 :33
@@ -500,7 +495,6 @@ echo ºÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÜÜÜÜÜÜÜÜÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛº
 echo ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
 ".\programas\WinRAR\%OS%\winrar.exe" /S
 if %errorlevel% equ 1 echo WINRAR >> "c:\config\log.txt"
-copy ".\configuracoes\programas\winrar\rarreg.key" "%programfiles%\WinRAR\" > nul
 
 goto automate
 
