@@ -11,7 +11,7 @@
     ·
     <a href="https://github.com/ylJeferson/automate/issues/new/choose">Sugerir Ideias</a>
   </p>
-<!-- <p align="center">Gostou do projeto? Por favor, considere realizar uma <a href="https://www.paypal.me/yljeferson">doação</a> para me ajudar! -->
+<p align="center">Gostou do projeto? Por favor, considere realizar uma <a href="https://www.paypal.com/donate/?business=3G3JKT9E3ZKXU&no_recurring=0&item_name=Muito+obrigado%2C+com+este+apoio+pretendo+crescer+cada+vez+mais%21&currency_code=BRL">doação</a> para me ajudar!
 
 ## Menu
 
