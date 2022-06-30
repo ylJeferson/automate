@@ -65,17 +65,23 @@ _Nota: Assim que realizar o download do batch, utilizar a opção 3 para que o p
       - _Caso não for possível realizar algum download, ao final é aberto um bloco de notas listando todos os downloads que não foram realizados._
 
 ### Configurações:
-<!--
- - `bgcolor` - bgcolor=_transparent_
- - `name` - name=_Example_
- - `namecolor` - namecolor=_rgb%28255,99,71%29_
- - `namefont` - namefont=_Tangerine_
- - `namefontsize` - namefontsize=_10rem_
- - `anim` - anim=_that's;what;this;is_
- - `animcolor` - animcolor=_%236941d3_
- - `animfont` - animfont=_Flow%20Rounded_
- - `animfontsize` - animfontsize=_5em_
--->
+
+ - `10 - Elevar Permissões` - Executa o arquivo batch como administrador.
+ - `11 - Administrador` - Ativa o Administrador local da máquina.
+      - _Você deve digitar uma senha para o usuário, ou simplesmente apertar o enter para confirmar a senha em branco_
+ - `12 - Ponto de Restauração` - Cria um ponto de restauração no windows.
+      - _Este comando só funciona uma vez por dia_
+ - `13 - Estrutura de Pastas` - Cria uma estrutura de pastas no Disco Local C e da permissão para todos os usuários.
+ - `14 - Copiar os Arquivos` - Copia alguns arquivos para a Área de Trabalho e para a pasta Config.
+ - `15 - Firewall` - Desativa o Firewall do Windows.
+ - `16 - Adaptador de Rede` - Renomeia o adaptador de rede principal para Ethernet.
+ - `17 - Windows Update` - Desativa as atualizações pelo Windows Update.
+      - _Você ainda pode atualizar manualmente clicando no botão "Verificar se há atualizações"_
+ - `90 - Padronização` - Cofigura fechamento de tampa e suspensão para não fazer nada.
+ - `91 - Registros` - Executa alguns arquivos de registro e da permissão para alteração neles.
+ - `98 - Arquivo Log` - Abre o arquivo de log listando nomes de programas que deram algum erro durante a instalação.
+ - `99 - Reiniciar` - Reinicia o computador afim de aplicar atualizações ou configurações de programas recém instalados.
+
 ### Programas:
 <!--
  - `bgcolor` - bgcolor=_transparent_
