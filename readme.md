@@ -1,13 +1,13 @@
 <p align="center">
- <img width="100px" src="automate.ico" align="center" alt="Automate Icon"/>
+ <img width="150px" src="automate.ico" align="center" alt="Automate Icon"/>
  <h2 align="center">Automate</h2>
- <p align="center">Batch file para automatizar algumas instalações de programas no windows</p>
+ <p align="center">Arquivo <strong>.bat</strong> para automatizar algumas instalações de programas no sistema operacional windows</p>
 </p>
 
 <p align="center">
     <a href="https://github.com/ylJeferson/automate">Download</a>
     ·
-    <a href="https://github.com/ylJeferson/automate/issues/new/choose">Report Bug</a>
+    <a href="https://github.com/ylJeferson/automate/issues/new/choose">Reportar Bug</a>
   </p>
 <!-- <p align="center">Love the project? Please consider <a href="https://www.paypal.me/yljeferson">donating</a> to help it improve! -->
 
@@ -16,6 +16,7 @@
 - [Automate](#automate)
 - [Customização](#customização)
   - [Opções](#opções)
+  - [Configurações](#configurações)
   - [Programas](#programas)
 <br>
 
@@ -35,10 +36,11 @@ _Nota: Após o fim do estágio eu continuei incrementando o arquivo e hoje em di
 1. Você pode estar criando até 10 perfis de instalação.
 2. Para tanto basta setar a variável `PERFIL` com os números dos programas que você deseja instalar.
 3. Para adicionar um programa à lista, basta criar uma label com um número de 10 a 99.
-4. Utilize a opção 8 para baixar/atualizar os arquivos de instalação.
-5. 
+4. Utilize a opção `3` para baixar/atualizar os arquivos de instalação.
+5. Para o bom funcionamento do batch quando em execução, é recomendado utilizar a encripitação `windows-1252`.
+6. Também é feito o download de um arquivo compactado que contem um executar chamado `autopy-downloader.exe`, pode ser que seu antivírus reconheça como arquivo malicioso.
 
-_Nota: Recomendo utilizar apenas programas com instalação silenciosa._
+_Nota: Assim que realizar o download do batch, utilizar a opção 3 para que o proprio script realize o download dos prorgamas e arquivos de configuração._
 
 <!--
  if %errorlevel% equ 1 set PERFIL=10 12 13 14 19 20 21 22 23 24 25 26 27 31 33 34 90 91 98<br>
@@ -54,16 +56,25 @@ _Nota: Recomendo utilizar apenas programas com instalação silenciosa._
 -->
   
 ### Opções:
+
+ - `00 - Padronização` - Aplica configurações e executa alguns registros afim de padronizar o sistema.
+ - `01 - Clientes` - Realiza a instalação de alguns programas previamente configurados diretamente no arquivos.
+ - `02 - Do It Yourself` - Abre um menu com as opções de programas que você pode instalar.
+      - _Basta digitar o número dos programas correspondentes e separar por espaço. (Exemplo: 11 24 30 ...)_
+ - `03 - Update` - Faz a atualização dos programas e arquivos de configuração.
+      - _Caso não for possível realizar algum download, ao final é aberto um bloco de notas listando todos os downloads que não foram realizados._
+
+### Configurações:
 <!--
- - `bgcolor` - Banner background _(any css color)_
- - `name` - Title _(whatever title you want)_. (I recommend it be your name)
- - `namecolor` - Title color _(any css color)_.  (I recommend it be hex color)
- - `namefont` - Title Font _(google font name)_. (I recommend https://fonts.google.com/)
- - `namefontsize` - Title _(font-size)_. (I recommend using 'rem')
- - `anim` - Words _(any words you want, separated by ';')_. (I recommend it be your qualities)
- - `animcolor` - Words color _(any css color)_.  (I recommend it be hex color)
- - `animfont` - Words Font _(google font name)_. (I recommend https://fonts.google.com/)
- - `animfontsize` - Words _(font-size)_. (I recommend using 'rem')
+ - `bgcolor` - bgcolor=_transparent_
+ - `name` - name=_Example_
+ - `namecolor` - namecolor=_rgb%28255,99,71%29_
+ - `namefont` - namefont=_Tangerine_
+ - `namefontsize` - namefontsize=_10rem_
+ - `anim` - anim=_that's;what;this;is_
+ - `animcolor` - animcolor=_%236941d3_
+ - `animfont` - animfont=_Flow%20Rounded_
+ - `animfontsize` - animfontsize=_5em_
 -->
 ### Programas:
 <!--
