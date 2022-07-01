@@ -230,7 +230,6 @@ mkdir "c:\config\temp"
 mkdir "c:\config\drivers"
 mkdir "c:\config\imagens"
 mkdir "c:\config\programas"
-mkdir "c:\config\programas\1. Portables"
 cacls "c:\config" /e /p Todos:f > nul
 
 goto automate
@@ -242,7 +241,6 @@ echo ºÛÛÛÛÛÛÛÛÛÛÛÛÛ COPIANDO ARQUIVOS ÛÛÛÛÛÛÛÛÛÛÛÛÛº
 echo ºÛÛÛÛÛÛÛÛÛÛÛÛÛÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÛÛÛÛÛÛÛÛÛÛÛÛÛº
 echo ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
 copy ".\configuracoes\atalhos\*.*" "C:%HOMEPATH%\..\Public\Desktop" > nul
-xcopy ".\programas\1. Portables" "C:\config\programas\1. Portables" /E /I /C /H /R /Y > nul
 
 goto automate
 
@@ -624,7 +622,6 @@ if not exist ".\drivers\" mkdir drivers > nul
 if not exist ".\programas\" mkdir programas > nul
 
 cd .\programas\ > nul
-if not exist ".\1. Portables\" mkdir "1. Portables" > nul
 if not exist ".\Seven Zip\32BIT\" mkdir "Seven Zip\32BIT" > nul
 if not exist ".\Seven Zip\64BIT\" mkdir "Seven Zip\64BIT" > nul
 if not exist ".\AnyDesk\" mkdir "AnyDesk" > nul
