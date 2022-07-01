@@ -35,15 +35,25 @@ _Nota: Após o fim do estágio eu continuei incrementando o arquivo e hoje em di
 
 ## Customização
 
-1. Você pode estar criando até 10 perfis de instalação.
-2. Para tanto basta setar a variável `PERFIL` com os números dos programas que você deseja instalar.
-3. Para adicionar um programa à lista, basta criar uma label com um número de 10 a 99.
-4. Utilize a opção `3` para baixar/atualizar os arquivos de instalação.
-5. Para o bom funcionamento do batch quando em execução, é recomendado utilizar a encripitação `windows-1252`.
-6. Também é feito o download de um arquivo compactado que contem um executar chamado `autopy-downloader.exe`, pode ser que seu antivírus reconheça como arquivo malicioso.
+1. Label `:profile` Aqui você pode estar escevendo as opções de perfil que vão aparecer para o usuário.
+2. Label `:escolha` Aqui você configura o perfil de instalação digitando os números dos programas.
+    - Basta digitar o número dos programas correspondentes e separar por espaço. `set PERFIL=11 24 30 ...`
+3. Label `:##` Aqui você utiliza para instalação de softwares ou para configurações.
+    - Essas labels devem conter 2 digitos e são adicionada na váriavel `PERFIL` para que o loop de instalação aconteça corretamente.
+4. Label `:bu` Aqui é uma seção dividida em 4 partes onde você pode adicionar mais programas para que o próprio _Batch File_ realize o download de seus executáveis.
+    - Criar estrutura de pastas caso elas não existirem. `if not exist "./caminho_da_pasta" mkdir "caminho_da_pasta" > nul`
+    - Baixar o programa utilizando link direto ou [autopy-downloader](https://github.com/ylJeferson/autopy-downloader). `start msedge -inprivate "digite_o_link_direto_aqui" > nul`
+    - Copiar/Extrair o programa para a pasta desejada. `copy "nome_do_programa.exe" "caminho_da_pasta_para_copiar" /y > nul`
+    - Deletar os download para não deixar arquivos residuais. `if exist "programa.exe" del "programa.exe" /f > nul`
 
-_Nota: Assim que realizar o download do batch, utilizar a opção 3 para que o proprio script realize o download dos prorgamas e arquivos de configuração._
-
+ <details>
+  <summary>Observações</summary>
+  
+  - Para o bom funcionamento do batch quando em execução, é recomendado utilizar a encripitação `windows-1252`.
+  - Também é feito o download de um arquivo compactado que contem um executar chamado `autopy-downloader.exe`, pode ser que seu antivírus reconheça como arquivo malicioso.
+  - Assim que realizar o download do batch, utilizar a opção 3 para que o proprio script realize o download dos programas e arquivos de configuração.
+</details>
+ 
 ### Opções:
 
  - `00 - Padronização:` Aplica configurações e executa alguns registros afim de padronizar o sistema.
@@ -93,4 +103,3 @@ _Nota: Assim que realizar o download do batch, utilizar a opção 3 para que o p
 
 _Nota:  Acima temos os programas que podem ser isntalados e seus parâmetros para uma instalação silenciosa._
 <br>
-
