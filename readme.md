@@ -44,23 +44,26 @@ _Nota: Após o fim do estágio eu continuei incrementando o arquivo e hoje em di
     - Criar estrutura de pastas caso elas não existirem. `if not exist "./caminho_da_pasta" mkdir "caminho_da_pasta" > nul`
     - Baixar o programa utilizando link direto ou [autopy-downloader](https://github.com/ylJeferson/autopy-downloader). `start msedge -inprivate "digite_o_link_direto_aqui" > nul`
     - Copiar/Extrair o programa para a pasta desejada. `copy "nome_do_programa.exe" "caminho_da_pasta_para_copiar" /y > nul`
-    - Deletar os download para não deixar arquivos residuais. `if exist "programa.exe" del "programa.exe" /f > nul`
+    - Deletar instaladores da pasta de downloads para não deixar arquivos residuais. `if exist "programa.exe" del "programa.exe" /f > nul`
  - Para o bom funcionamento do batch quando em execução, é recomendado utilizar a encripitação `windows-1252`.
  - Também é feito o download de um arquivo compactado que contem um executar chamado `autopy-downloader.exe`, pode ser que seu antivírus reconheça como arquivo malicioso.
  - Assim que realizar o download do batch, utilizar a opção 3 para que o proprio script realize o download dos programas e arquivos de configuração.
 
  <details>
   <summary>Imagens</summary>
+  <br>
   <div align="center">
-  
-  <img width="=500px" height="350px" src="https://user-images.githubusercontent.com/27925751/177019835-b79c4ef8-8be9-46e9-bafc-1c82953792b4.png" alt="Profile Label">
-  <img width="=500px" height="350px" src="https://user-images.githubusercontent.com/27925751/177019835-b79c4ef8-8be9-46e9-bafc-1c82953792b4.png" alt="Profile Label">
-  
-  
-
+    <img width="=500px" height="350px" src="https://user-images.githubusercontent.com/27925751/177044833-7a190fd2-64ad-4856-acb3-fb73c26376ef.png" alt="Profile Label - :profile">
+    <img width="=500px" height="350px" src="https://user-images.githubusercontent.com/27925751/177044730-f2c9fc26-444b-4ec4-abd8-1b8bcb533628.png" alt="Escolha Label - :escolha">
+    <img width="=500px" height="350px" src="https://user-images.githubusercontent.com/27925751/177044225-59091c9d-36da-4de1-9c8d-053beb27debd.png" alt="Instalação Label - :##">
+    <img width="=500px" height="350px" src="https://user-images.githubusercontent.com/27925751/177044100-eb42f49c-c699-4147-99b0-da3480d11fdb.png" alt="Bat Upadte Label - :bu">
+    <img width="=500px" height="350px" src="https://user-images.githubusercontent.com/27925751/177044021-56c680f4-fa94-4cf2-b7a0-f969b5f0aacb.png" alt="Criar estrutura de pastas">
+    <img width="=500px" height="350px" src="https://user-images.githubusercontent.com/27925751/177043462-5a94c52b-e1a6-4467-898a-2f07ce3839fd.png" alt="Baixar utilitarios e instaladores">
+    <img width="=500px" height="350px" src="https://user-images.githubusercontent.com/27925751/177043514-8eb8075a-4e1f-4190-be75-76d832b562da.png" alt="Copiar instaladores para o automate">
+    <img width="=500px" height="350px" src="https://user-images.githubusercontent.com/27925751/177043724-0bd25fa9-3efc-437d-b6f2-7a692213e80a.png" alt="Deletar arquivos residuais">   
   </div>
 </details>
- 
+
 ### Opções:
 
  - `00 - Padronização:` Aplica configurações e executa alguns registros afim de padronizar o sistema.
