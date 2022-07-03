@@ -45,13 +45,20 @@ _Nota: Após o fim do estágio eu continuei incrementando o arquivo e hoje em di
     - Baixar o programa utilizando link direto ou [autopy-downloader](https://github.com/ylJeferson/autopy-downloader). `start msedge -inprivate "digite_o_link_direto_aqui" > nul`
     - Copiar/Extrair o programa para a pasta desejada. `copy "nome_do_programa.exe" "caminho_da_pasta_para_copiar" /y > nul`
     - Deletar os download para não deixar arquivos residuais. `if exist "programa.exe" del "programa.exe" /f > nul`
+ - Para o bom funcionamento do batch quando em execução, é recomendado utilizar a encripitação `windows-1252`.
+ - Também é feito o download de um arquivo compactado que contem um executar chamado `autopy-downloader.exe`, pode ser que seu antivírus reconheça como arquivo malicioso.
+ - Assim que realizar o download do batch, utilizar a opção 3 para que o proprio script realize o download dos programas e arquivos de configuração.
 
  <details>
-  <summary>Observações</summary>
+  <summary>Imagens</summary>
+  <div align="center">
   
-  - Para o bom funcionamento do batch quando em execução, é recomendado utilizar a encripitação `windows-1252`.
-  - Também é feito o download de um arquivo compactado que contem um executar chamado `autopy-downloader.exe`, pode ser que seu antivírus reconheça como arquivo malicioso.
-  - Assim que realizar o download do batch, utilizar a opção 3 para que o proprio script realize o download dos programas e arquivos de configuração.
+  <img width="=500px" height="350px" src="https://user-images.githubusercontent.com/27925751/177019835-b79c4ef8-8be9-46e9-bafc-1c82953792b4.png" alt="Profile Label">
+  <img width="=500px" height="350px" src="https://user-images.githubusercontent.com/27925751/177019835-b79c4ef8-8be9-46e9-bafc-1c82953792b4.png" alt="Profile Label">
+  
+  
+
+  </div>
 </details>
  
 ### Opções:
