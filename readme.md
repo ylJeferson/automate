@@ -113,3 +113,15 @@ _Nota: Após o fim do estágio eu continuei incrementando o arquivo e hoje em di
 
 _Nota:  Acima temos os programas que podem ser isntalados e seus parâmetros para uma instalação silenciosa._
 <br>
+
+## Estrutura do Projeto
+
+- `automate.bat`: script principal de automacao.
+- `automate.ico`: icone do projeto.
+- `autorun.inf`: configuracao de autorun.
+- `license`: licenca do projeto.
+- `readme.md`: documentacao, estrutura, funcionamento e diretrizes do projeto.
+
+## Funcionamento
+
+O projeto utiliza um arquivo batch para aplicar configuracoes do Windows, criar perfis de instalacao, baixar instaladores e executar instalacoes silenciosas conforme as opcoes escolhidas no menu.
