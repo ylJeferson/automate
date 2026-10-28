@@ -20,6 +20,7 @@
   - [Opções](#opções)
   - [Configurações](#configurações)
   - [Programas](#programas)
+- [Verificações futuras](documentacao/verificacoes_futuras.md)
 <br>
 
 ## História
@@ -121,6 +122,8 @@ _Nota:  Acima temos os programas que podem ser isntalados e seus parâmetros par
 - `autorun.inf`: configuracao de autorun.
 - `license`: licenca do projeto.
 - `readme.md`: documentacao, estrutura, funcionamento e diretrizes do projeto.
+- `documentacao/verificacoes_futuras.md`: catalogo de rotinas para avaliacao futura, sem integracao ao script principal.
+- `documentacao/correcoes/iniciar_permissoes.md`: referencia de codigo do reparo especifico de permissoes do Iniciar.
 
 ## Funcionamento
 
